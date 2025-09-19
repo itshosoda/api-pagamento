@@ -1,0 +1,84 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.checkout-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#card-element {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#card-errors {
+    color: #fa755a;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+button {
+    background-color: #6772e5;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #5469d4;
+}
+
+#submit-button:disabled {
+    background-color: #a9b3f9;
+    cursor: not-allowed;
+}
+
+#payment-status-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#payment-status-container.hidden {
+    display: none;
+}
